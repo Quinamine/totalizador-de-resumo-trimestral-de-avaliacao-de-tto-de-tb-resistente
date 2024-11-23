@@ -192,6 +192,7 @@
     width: 100%;
 }
 [data-totaleixox]:focus,
+.ficha__seccao--3 input:focus,
 .input-nao-celular:focus,
 .input-celular--focus:focus {
     border-bottom: 2px solid var(--blue);
