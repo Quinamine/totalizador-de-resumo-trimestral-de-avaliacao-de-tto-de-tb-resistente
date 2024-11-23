@@ -1,0 +1,241 @@
+﻿.ficha {
+    width: var(--layout-width);
+    margin: 30px auto;
+    color: var(--fullblack);
+}
+@media print {
+    .ficha {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
+.ficha span {
+    line-height: 1.2;
+}
+.ficha__header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 100%;
+    font-size: 15px;
+}
+.ficha__header-col-de-emblema {
+    flex-direction: column;
+    padding: 20px 0;
+}
+.ficha__emblema {
+    margin: auto;
+    width: 55px;
+    height: 55px;
+}
+.ficha__box-descricao-de-emblema span {
+    display: block;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.ficha__header__col-de-pnct {
+    flex-direction: column;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+.ficha__header__col-de-pnct h2 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.ficha__moldura-de-logo-de-pnct {
+    margin-top: 7px;
+    width: 140px;
+    height: 55px;
+}
+.ficha__header__col-de-localizacao {
+    display: grid;
+    grid-template-rows: 25px repeat(4, 1fr);
+}
+.ficha__col-de-localizacao__linha {
+    padding-left: 4px;
+}
+.ficha__col-de-localizacao__linha--margin-t {
+    margin-top: 6px;
+    min-height: 20px;
+}
+.ficha__col-de-localizacao__linha--border-t {
+    border-top: 1px solid var(--cor-de-borda);
+    padding-top: 2px;
+    margin-top: 10px;
+}
+.ficha__col-de-localizacao__linha--border-t {
+    border-top: 1px solid var(--cor-de-borda);
+    padding-top: 2px;
+    margin-top: 10px;
+}
+.ficha__col-de-localizacao__linha input {
+    flex: 1;
+}
+.ficha__header__col-de-titulo {
+    grid-column: 1/4;
+    padding: 5px 0;
+    background-color: var(--fullblack);
+    color: var(--yt);
+}
+.ficha__titulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+}
+.ficha__seccao__titulo {
+    font-size: 12.8px;
+    text-align: center;
+    padding: 4px 0;
+    text-transform: uppercase;
+}
+.ficha__seccao__titulo--bg-black {
+    background-color: var(--fullblack);
+    color: var(--yt);
+    margin-top: 4px;
+    padding: 6px 0;
+}
+.ficha__seccao__header {
+    display: grid;
+    grid-template-columns: 385px calc(54.9px * 10);
+}
+.ficha__seccao--2 {
+    border-top: 8px solid var(--gray--a);
+}
+.ficha__seccao__pseudo-header {
+    display: grid;
+    grid-template-columns: 385px repeat(11, 54.9px);
+}
+.ficha__seccao__pseudo-header--seccao-3 {
+    grid-template-columns: 385px repeat(6, 87.8px) 1fr;
+    text-align: center;
+    font-size: 11.8px;
+}
+.seccao__header__col-faixas-etarias {
+    display: grid;
+    grid-template-columns: calc(54.9px * 10) 54.9px;
+    grid-template-rows: repeat(2, 22px);
+    grid-template-areas: "colnumbers total" "faixasetarias total";
+}
+.seccao__header__col-faixas-etarias--grid-template-rows-3 {
+    grid-template-rows: 22px 18px 22px;
+    grid-template-areas: "title title" "colnumbers total" "faixasetarias total";
+}
+.seccao-2__header__col-faixas-etarias {
+    grid-template-areas: "title title" "faixasetarias total";
+}
+.seccao__header__linha-com-titulo-faixas-etarias {
+    grid-area: title;
+}
+.seccao__header__linha-com-numeros-das-colunas {
+    grid-area: colnumbers;
+}
+.seccao__header__linha-de-faixas-etarias {
+    grid-area: faixasetarias;
+}
+.seccao__header__col-total {
+    grid-area: total;
+}
+.grid-template-cols-10 {
+    display: grid;
+    grid-template-columns: repeat(10, 54.9px);
+}
+.ficha__seccao__body {
+    display: grid;
+    grid-template-columns: 385px repeat(11, 54.9px)
+}
+.ficha__seccao__body--3 {
+    grid-template-columns: 385px repeat(6, 87.8px) 1fr;
+}
+.ficha__col-de-indicadores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.ficha__col-de-indicadores--seccao-3 {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 22px) 32px;
+}
+.ficha__col-de-indicadores span {
+    padding-left: 2px;
+}
+.ficha__subcol-de-indicadores-1 {
+    display: grid;
+    grid-template-rows: repeat(3, calc(22px * 7));
+    font-weight: 700;
+}
+.ficha__seccao--2 .ficha__subcol-de-indicadores-1 {
+    grid-template-rows: repeat(2, calc(22px * 7));
+}
+.ficha__subcol-de-indicadores-2,
+.ficha__col-de-inputs {
+    display: grid;
+    grid-template-rows: repeat(21, 22px);
+}
+.ficha__seccao--2 .ficha__subcol-de-indicadores-2,
+.ficha__seccao--2 .ficha__col-de-inputs {
+    display: grid;
+    grid-template-rows: repeat(14, 22px);
+}
+.ficha__subcol-de-indicadores-2 span {
+    padding-left: 2px;
+}
+.ficha__col-de-inputs {
+    grid-template-columns: 54.9px;
+    overflow: hidden;
+}
+.ficha__seccao--3 .ficha__col-de-inputs {
+    grid-template-rows: repeat(3, 22px) 32px;
+    grid-template-columns: 1fr;
+}
+.ficha__col-de-inputs input {
+    width: 100%;
+}
+[data-totaleixox]:focus,
+.input-nao-celular:focus,
+.input-celular--focus:focus {
+    border-bottom: 2px solid var(--blue);
+    background-color: var(--greenyellow);
+    color: var(--cor-de-texto);
+}
+@media screen {
+    .input--realcar-totais {
+        background-color: var(--cor-de-realce-de-totais);
+    }
+}
+.input--bg-color-danger {
+    background-color: var(--cor-de-risco);
+    color: var(--yt)
+}
+.input--font-small {
+    font-size: 12px
+}
+.ficha__rodape__nota {
+    padding: 10px 2px;
+    line-height: 1.2;
+    font-weight: initial;
+}
+.ficha__rodape__linha-de-nome-e-categoria {
+    display: grid;
+    grid-template-columns: calc(305px + 57.8px + 65px *  5) 1fr;
+    margin: 15px 0;
+    padding-left: 2px;
+    min-height: 21px;
+}
+.ficha__rodape__campo-de-nome {
+    width: 470px;
+}
+.ficha__rodape__campo-de-categoria {
+    width: 230px;
+}
+.ficha__rodape__col-de-data {
+    padding-left: 2px;
+    padding-bottom: 10px;
+}
+/* CLASSES REUTILIZÁVEIS */
+.--cor-de-fundo-padrao {
+    background-color: var(--gray--c);
+}
+.--cor-de-fundo-padrao--discreta {
+    background-color: var(--gray--d);
+}
