@@ -1,7 +1,7 @@
 ﻿.ficha {
     width: var(--layout-width);
     margin: 30px auto;
-    color: var(--fullblack);
+    color: var(--black);
 }
 @media print {
     .ficha {
@@ -76,7 +76,7 @@
 .ficha__header__col-de-titulo {
     grid-column: 1/4;
     padding: 5px 0;
-    background-color: var(--fullblack);
+    background-color: var(--black);
     color: var(--yt);
 }
 .ficha__titulo {
@@ -91,7 +91,7 @@
     text-transform: uppercase;
 }
 .ficha__seccao__titulo--bg-black {
-    background-color: var(--fullblack);
+    background-color: var(--black);
     color: var(--yt);
     margin-top: 4px;
     padding: 6px 0;
@@ -101,7 +101,7 @@
     grid-template-columns: 385px calc(54.9px * 10);
 }
 .ficha__seccao--2 {
-    border-top: 8px solid var(--gray--a);
+    border-top: 8px solid var(--gray-a);
 }
 .ficha__seccao__pseudo-header {
     display: grid;
@@ -235,8 +235,8 @@
 }
 /* CLASSES REUTILIZÁVEIS */
 .--cor-de-fundo-padrao {
-    background-color: var(--gray--c);
+    background-color: var(--gray-c);
 }
 .--cor-de-fundo-padrao--discreta {
-    background-color: var(--gray--d);
+    background-color: var(--gray-d);
 }
